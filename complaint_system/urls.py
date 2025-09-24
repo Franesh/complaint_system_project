@@ -19,5 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('complaints.urls')),   # route root to complaints app
+    path('complaints/', include('complaints.urls', namespace='complaints')), # route root to complaints app
 ]
